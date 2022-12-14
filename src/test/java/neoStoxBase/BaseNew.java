@@ -19,8 +19,6 @@ public class BaseNew
 	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.get(UtilityNew.readDataFromPropertyFile("Url"));
-		
-		
 		Reporter.log("Launching Browser", true);
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 	}
