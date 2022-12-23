@@ -18,9 +18,8 @@ public class BaseNew
 		System.setProperty("webdriver.chrome.driver", "D:\\AARTI\\chromedriver_win32\\chromedriver.exe");
 	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
+		
 		driver.get(UtilityNew.readDataFromPropertyFile("Url"));
-		
-		
 		Reporter.log("Launching Browser", true);
 		driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
 	}
